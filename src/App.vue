@@ -5,13 +5,14 @@
 </template>
 
 <script>
-const sketch = require('./sketchs/simple')
+import sketch from './sketchs/simple'
+
 export default {
   name: 'app',
     mounted() {
         // NOTE: Use p5 as an instance mode
         const P5 = require('p5');
-        new P5(sketch.main)
+        new P5(sketch)
     }
 }
 </script>

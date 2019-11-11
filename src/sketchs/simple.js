@@ -1,4 +1,4 @@
-export function main(p5) {
+export default function(p5) {
     // NOTE: Set up is here
     p5.setup = function () {
         let canvas = p5.createCanvas(600, 400);
