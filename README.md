@@ -25,5 +25,12 @@ yarn run test
 yarn run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### p5.js
+
+```
+yarn add p5
+```
+
+### 参考
+
+https://medium.com/js-dojo/experiment-with-p5-js-on-vue-7ebc05030d33
