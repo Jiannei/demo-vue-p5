@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import P5 from 'p5'
 let sketch = require('./sketchs/simple')
 
 export default {
@@ -18,7 +19,6 @@ export default {
     },
     mounted() {
         // NOTE: Use p5 as an instance mode
-        const P5 = require('p5');
         new P5(sketch.main)
 
         // NOTE: p5.js

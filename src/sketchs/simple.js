@@ -9,7 +9,7 @@ function notifyCurrentTime() {
     }
 }
 
-export function main(_p5) {
+export  function main(_p5) {
     p5 = _p5
     // NOTE: Set up is here
     p5.setup = function () {
@@ -26,6 +26,6 @@ export function main(_p5) {
     }
 }
 
-export function setDelegate(_delegate) {
+export  function setDelegate(_delegate) {
      delegate = _delegate;
 }
