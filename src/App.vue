@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-      <div id="canvas"></div>
-      <div>{{ message }}</div>
+      <div id="canvas" style="width: 100%; height: 100%;overflow: hidden"></div>
   </div>
 </template>
 
@@ -19,7 +18,7 @@ export default {
     },
     mounted() {
         // NOTE: Use p5 as an instance mode
-        new P5(sketch({delegate:this.callbackOnP5}))
+        new P5(sketch())
 
         // NOTE: p5.js
         // sketch.setDelegate(this.callbackOnP5);
@@ -34,5 +33,8 @@ export default {
 </script>
 
 <style>
-
+html{
+    padding:0;
+    margin:0;
+}
 </style>
