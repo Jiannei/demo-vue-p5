@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <div id="canvas" style="width: 100%; height: 100%;overflow: hidden"></div>
+      <div id="canvas"></div>
   </div>
 </template>
 
@@ -33,8 +33,10 @@ export default {
 </script>
 
 <style>
-html{
-    padding:0;
-    margin:0;
-}
+    html, body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
 </style>
