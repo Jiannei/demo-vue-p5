@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <div id="canvas"></div>
-      {{ message }}
+      <div>{{ message }}</div>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     },
     mounted() {
         // NOTE: Use p5 as an instance mode
-        new P5(sketch,'#canvas')
+        new P5(sketch({delegate:this.callbackOnP5}))
 
         // NOTE: p5.js
         // sketch.setDelegate(this.callbackOnP5);
