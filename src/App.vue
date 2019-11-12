@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-      <div id="canvas"></div>
+      <span>今日云景好，水绿秋山明。</span>
+      <div id="canvas" style="position:absolute;top: 0;z-index: -1"></div>
   </div>
 </template>
 
