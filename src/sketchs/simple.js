@@ -1,6 +1,8 @@
+let delegate;
+
 module.exports = function (options = {}) {
     return (p5) => {
-        let delegate = options.delegate;
+        delegate = options.delegate;
 
         // NOTE: Set up is here
         p5.setup = function () {
@@ -13,14 +15,14 @@ module.exports = function (options = {}) {
             p5.background(102);
             p5.ellipse(50, 50, 80, 80);
 
-            notifyCurrentTime();
+            notifyCurrentTime(p5);
         }
+    }
+}
 
-        function notifyCurrentTime() {
-            if (delegate !== undefined) {
-                const message = p5.hour() + ":" + p5.minute() + ":" + p5.second();
-                delegate(message);
-            }
-        }
+function notifyCurrentTime(p5) {
+    if (delegate !== undefined) {
+        const message = p5.hour() + ":" + p5.minute() + ":" + p5.second();
+        delegate(message);
     }
 }
