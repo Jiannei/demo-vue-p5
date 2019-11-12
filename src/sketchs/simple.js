@@ -1,4 +1,4 @@
-module.exports = function (options) {
+module.exports = function (options = {}) {
     return (p5) => {
         let delegate = options.delegate;
 
